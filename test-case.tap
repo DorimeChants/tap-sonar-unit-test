@@ -1,0 +1,23 @@
+TAP version 13
+ok 1 - path › to › file.ts › everything is ok, just very communicative
+INFO - This is a log that got in here from the pipe, just testing the extra
+ok 2 - path › to › file.ts › This is a skipped test # SKIP
+not ok 3 - path › to › file.ts › This is a test to do # TODO
+not ok 4 - path › to › anotherFile.ts › This test has failed
+  ---
+    name: AssertionError
+    message: '{"ok":false,"message":"HTTP: Authentication required."}'
+    assertion: is
+    values:
+      'Difference:': |-
+        - 401
+        + 201
+    at: 'path/to/anotherFile.ts:12:3'
+  ...
+
+1..4
+# tests 4
+# pass 1
+# skip 1
+# fail 2
+
