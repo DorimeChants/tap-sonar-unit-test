@@ -4,8 +4,7 @@
   "description": "TAP to xUnit XML converter.",
   "main": "lib/converter.js",
   "bin": {
-    "tap-xunit": "./bin/tap-sonar-unit-test",
-    "txunit": "./bin/tap-sonar-unit-test"
+    "tap-sonar-unit-test": "./bin/tap-sonar-unit-test"
   },
   "scripts": {
   },
